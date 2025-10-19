@@ -1,0 +1,102 @@
+[index.html](https://github.com/user-attachments/files/22989805/index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="standalone.js" defer></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .tem{
+        margin: 20px;
+    }
+    .temp-value {
+        display: flex;
+        flex-direction:column;
+        margin: 20px;
+    }
+    .convert {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;    
+    }
+    .from {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .to {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .con {
+        display: flex;
+        justify-content: center;
+    }
+    .con_btn {
+        display: block;
+        width: 100%;
+        margin: 20px;
+        background-color: black;
+        color: #fff;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .result {
+        display: flex;
+        height: 50px;
+        background-color: rgba(128, 128, 128, 0.46);
+        border-radius: 10px;
+        margin: 20px;
+        justify-content: center;
+    }
+    h1 {
+        margin: 20px;
+    }
+
+</style>
+<body>
+
+    <h1 class="tem">TEMPERATURE CONVERTER</h1>
+    <form>
+        <div class="temp-value">
+            <label for="number" class="temp">Temperature value</label>
+        <input type="number" class="value">
+        </div>
+        <div class="convert">
+            <div class="from">
+            <label for="from">From</label>
+            <select name="unit">
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
+         </div>
+         <div class="to">
+            <label for="to">To</label>
+            <select name="unit">
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
+        </div>
+        </div>
+        <div class="con">
+            <button class="con_btn">convert</button>  
+        </div>   
+    </form>
+    <h1>conversion result</h1>
+    <div class="result"></div>
+    <h1>all equivalent</h1>
+    <div class="result celsius"></div>
+    <div class="result fahrenheit"></div>
+    <div class="result kelvin"></div>
+</body>
+</html>
